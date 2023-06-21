@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>JAVASCRIPT TALLER 1</title>
+
+		<meta charset="uft=8">
+		<link rel="stylesheet" type="text/css" href="css/Estilos.css">
+		    <link rel="icon" href="img/javaScrip.ico"> 
+    </head>
+     <body>
+       
+         <div id="principal">
+                    <header>
+                        <div id="Logo"><img src="img/LOGO.png" width="340"heigth="500">
+                          
+                    </header>
+        </div>
+                 <nav class="menu"> <ul><BR>
+                    <li class="actual"><a href="index.html">VOLVER AL INICIO.</a></li>
+                    </ul>
+                    </nav>
+                
+
+
+                    <h1>Calculadora de figuras geométricas</h1>
+
+                    <div class="shapes-container">
+                      <div class="shape-card" id="circle-card">
+                        <h2>Círculo</h2>
+                        <img src="img/circulo.png" width="100"heigth="100">
+                        <div class="buttons">
+                          <button onclick="openModal('circle')">Perímetro</button>
+                          <button onclick="openModal('circle')">Área</button>
+                        </div>
+                      </div>
+                    
+                      <div class="shape-card" id="triangle-card">
+                        <h2>Triángulo</h2>
+                        <img src="img/triangulo.png" width="100"heigth="100">
+                        <div class="buttons">
+                          <button onclick="openModal('triangle')">Perímetro</button>
+                          <button onclick="openModal('triangle')">Área</button>
+                        </div>
+                      </div>
+                    
+                      <div class="shape-card" id="rectangle-card">
+                        <h2>Rectángulo</h2>
+                        <img src="img/rectagulo.png" width="100"heigth="100">
+                        <div class="buttons">
+                          <button onclick="openModal('rectangle')">Perímetro</button>
+                          <button onclick="openModal('rectangle')">Área</button>
+                        </div>
+                      </div>
+                    
+                      <div class="shape-card" id="square-card">
+                        <h2>Cuadrado</h2>
+                        <img src="img/cuadrado.png" width="100"heigth="100">
+                        <div class="buttons">
+                          <button onclick="openModal('square')">Perímetro</button>
+                          <button onclick="openModal('square')">Área</button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div id="modal" class="modal">
+                      <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 id="modal-title"></h2>
+                        <div id="modal-body">
+                          <input type="file" id="image-input">
+                        </div>
+                        <div class="modal-buttons">
+                          <button onclick="calculate()">Calcular</button>
+                          <button onclick="closeModal()">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  
+                    <script type="text/JavaScript" src="js/reto6.js"></script>
+</body>
+</html>
